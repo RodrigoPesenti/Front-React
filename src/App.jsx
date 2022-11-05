@@ -6,8 +6,8 @@ import ListadoTarea from './components/ListadoTarea'
 
 function App() {
 
-  const [ tareas, setTareas] = useState([])
-  const [ tarea, setTarea] = useState({})
+  const [ articulos, setArticulos] = useState([])
+  const [ articulo, setarticulo] = useState({})
 
   return (
     <div className="container mx-auto mt-20">
@@ -15,12 +15,12 @@ function App() {
         <div className="mt-12 md:flex" >
           <Formulario
             //Estas 2 son props (Properties) sirven para pasar valores entre componentes
-            tareas = {tareas}
-            setTareas={setTareas}
+            articulos = {articulos}
+            setArticulos={setArticulos}
           />
           <ListadoTarea
-            tareas={tareas}
-            setTareas= {setTareas}
+            articulos={articulos}
+            setArticulos= {setArticulos}
            />
         </div>
 
